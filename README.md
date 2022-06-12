@@ -1,4 +1,4 @@
-# Second hw
+# Sample output
     C:\work\venv\Scripts\python.exe C:/work/Second_hw.py
     ID пользователя Имя пользователя  ... Оценка Время просмотра
     0                 1          Евгений  ...      8        02:28:55
