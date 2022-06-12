@@ -1,0 +1,19 @@
+# Configuring
+config/
+config.*
+.env
+.idea
+
+# Environments
+env/
+dev-env/
+test-env/
+venv/
+dev-venv/
+test-venv/
+ENV/
+DEV-ENV/
+TEST-ENV/
+
+# Excel $ files
+~$DB.xlsx

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FilmsDb</class>
+ <widget class="QMainWindow" name="FilmsDb">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>920</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1080</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Films Database App</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1071</width>
+      <height>871</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTabWidget" name="dbTabs">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>База Данных</string>
+        </attribute>
+        <widget class="QTableWidget" name="dbTableWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1061</width>
+           <height>741</height>
+          </rect>
+         </property>
+         <column>
+          <property name="text">
+           <string>ID пользователя</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Имя пользователя</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>E-mail пользователя</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Наличие Подписки</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ID фильма</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Название Фильма</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ID режиссера</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Режиссер</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Жанр</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Оценка</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Время Просмотра</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QPushButton" name="tableSaveButton">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>750</y>
+           <width>1061</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Save changes to Database</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tableAddButton">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>810</y>
+           <width>1061</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Add new Element</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="deleteButton">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>780</y>
+           <width>1061</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Delete current row</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Фильмы - просмотры</string>
+        </attribute>
+        <widget class="QTableWidget" name="dbTableFilmViewsWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1061</width>
+           <height>841</height>
+          </rect>
+         </property>
+         <column>
+          <property name="text">
+           <string>Название Фильма</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Количество Просмотров</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>Рейтинг фильмов</string>
+        </attribute>
+        <widget class="QTableWidget" name="dbTableFilmRatingsWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1061</width>
+           <height>841</height>
+          </rect>
+         </property>
+         <column>
+          <property name="text">
+           <string>Название фильма</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Оценка</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>Рейтинг режиссеров</string>
+        </attribute>
+        <widget class="QTableWidget" name="dbTableRejRatingsWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1061</width>
+           <height>841</height>
+          </rect>
+         </property>
+         <column>
+          <property name="text">
+           <string>Режиссер</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Оценка</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_5">
+        <attribute name="title">
+         <string>Наличие подписки у пользователей</string>
+        </attribute>
+        <widget class="QTableWidget" name="dbTableSubscribeStatsWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1061</width>
+           <height>841</height>
+          </rect>
+         </property>
+         <column>
+          <property name="text">
+           <string>Имя пользователя</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>E-mail пользователя</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Наличие Подписки</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_6">
+        <attribute name="title">
+         <string>График &quot;Фильмы - Просмотры&quot;</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_7">
+        <attribute name="title">
+         <string>График &quot;Оценки по частоте&quot;</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_8">
+        <attribute name="title">
+         <string>График &quot;Фильмы - рейтинг&quot;</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_9">
+        <attribute name="title">
+         <string>График &quot;Фильмы - рейтинг(Scatter)&quot;</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_10">
+        <attribute name="title">
+         <string>Диаграмма Бокса-Вискера для среднего количества просмотров</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
